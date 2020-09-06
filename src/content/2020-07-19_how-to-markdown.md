@@ -1,6 +1,6 @@
 ---
 title: "How To: Markdown"
-date: "2020-07-12"
+date: "2020-07-19"
 draft: false
 path: "/blog/how-to-markdown"
 ---
