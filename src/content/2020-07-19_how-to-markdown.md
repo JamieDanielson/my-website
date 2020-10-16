@@ -140,14 +140,14 @@ The above code block will looks like this:
 For links, you should never have a "bare" URL. If you just have a URL and don't want to specify a differnet display name for it, wrap the URL with parantheses and carrots. But if you have something else you want to display in place of hte URL (perhaps the page title), wrap the name in brackets `[]` and the URL in parantheses `()`.
 
 ```md
-(<www.google.com>)
+<www.google.com>
 
 [Google](www.google.com)
 ```
 
 Thie above code block will show the following:
 
-(<www.google.com>)
+www.google.com
 
 [Google](www.google.com)
 
