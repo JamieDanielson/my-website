@@ -5,9 +5,7 @@ draft: false
 path: "/blog/how-to-css-variables"
 ---
 
-## How to Use Custom Properties aka CSS Variables
-
-### First: Why use CSS Variables
+## First: Why use CSS Variables
 
 * Easily achieve consistency
 * Easily update in the future
@@ -21,7 +19,7 @@ This is achievable if you know what your set styles are, but if one of those sty
 
 Accidents happen. I meant to type `#181515` but I accidentally typed `#181815`. Or I meant to have `3px` but I wrote `3em`. Using a variable name instead of remembering the exact value is much easier, and helps make it clear the intention of a certain style.
 
-### Now: How to use CSS Variables
+## Now: How to use CSS Variables
 
 First, declare your variables in `:root`. Then use those throughout the stylesheet where needed.
 
@@ -45,7 +43,7 @@ Using an editor like VSCode you also get auto-suggestions even when just typing 
 
 This only scratches the surface. You can also have fallbacks in case a variable is used but not actually defined, and you can use these variables with JavaScript as well for getting and setting properties. But this is a good start to making CSS easier and cleaner - without needing a preprocessor.
 
-### Further Reading
+## Further Reading
 
 * [Using CSS custom properties (variables) | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 * [CSS Variables: Why Should You Care? | developers.google](https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care)
