@@ -728,8 +728,29 @@ a::selection {
   max-height: 500px;
 }
 
+@media only screen and (min-width: 481px) {
+  .my-face {
+    min-height: 500px;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
+  .my-face {
+    min-height: 340px;
+  }
+}
+
+/* Contact Me */
+input[type=text], input[type=email], textarea {
+  padding: 10px;
+  margin: 0 0 10px;
+  border-radius: 5px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
 }
