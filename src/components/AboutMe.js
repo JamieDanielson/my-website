@@ -44,10 +44,9 @@ const AboutMe = () => (
             className="my-face"
           ></img>
         </div>
-        <Container></Container>
         <Container>
           <div>
-            <h3>Jamie Danielson</h3>
+            <h2>Jamie Danielson</h2>
             <Description>
               <p>
                 I am a big believer in lifetime learning. I started my web
@@ -58,8 +57,8 @@ const AboutMe = () => (
                 automate processes and to bring ideas to life. I've come so far
                 in 3 years but will always be learning and improving to be the
                 best I can be.
-              </p>
-              <p>
+                <br />
+                <br />
                 I currently work as an eCommerce Specialist, which entails
                 everything to do with eCommerce websites. I collaborate with
                 designers and product managers on new features, I implement
@@ -67,18 +66,15 @@ const AboutMe = () => (
                 web accessibility, I automate SQL maintenance tasks and plugin
                 deployments using Azure DevOps... and boldly take on any
                 challenge I face!
+                <br />
+                <br />
+                <b>Hobbies:</b> Reading, Writing, Learning
+                <br />
+                <b>Specialties:</b> HTML, CSS, JS, SQL, SEO, A11y
+                <br />
+                <b>Cats:</b> JD, Hera, Apollo, Dante
+                <br />
               </p>
-              <ul>
-                <li>
-                  <b>Hobbies:</b> Reading, Writing, Learning
-                </li>
-                <li>
-                  <b>Specialties:</b> HTML, CSS, JS, SQL, SEO, A11y
-                </li>
-                <li>
-                  <b>Cats:</b> JD, Hera, Apollo, Dante
-                </li>
-              </ul>
             </Description>
           </div>
         </Container>
