@@ -45,38 +45,34 @@ const AboutMe = () => (
           ></img>
         </div>
         <Container>
-          <div>
-            <h2>Jamie Danielson</h2>
-            <Description>
-              <p>
-                I am a big believer in lifetime learning. I started my web
-                development journey in early 2017 and never looked back. The
-                first time I wrote code for a web page I was immediately hooked.
-                Being able to write code and see it in action is an incredible
-                feeling. I'm always looking for ways to be more efficient, to
-                automate processes and to bring ideas to life. I've come so far
-                in 3 years but will always be learning and improving to be the
-                best I can be.
-                <br />
-                <br />
-                I currently work as an eCommerce Specialist, which entails
-                everything to do with eCommerce websites. I collaborate with
-                designers and product managers on new features, I implement
-                design and front-end development, I assess and improve SEO and
-                web accessibility, I automate SQL maintenance tasks and plugin
-                deployments using Azure DevOps... and boldly take on any
-                challenge I face!
-                <br />
-                <br />
-                <b>Hobbies:</b> Reading, Writing, Learning
-                <br />
-                <b>Specialties:</b> HTML, CSS, JS, SQL, SEO, A11y
-                <br />
-                <b>Cats:</b> JD, Hera, Apollo, Dante
-                <br />
-              </p>
-            </Description>
-          </div>
+          <h2>Jamie Danielson</h2>
+          <Description>
+            I am a big believer in lifetime learning. I started my web
+            development journey in early 2017 and never looked back. The first
+            time I updated a web page I was immediately hooked. Being able to
+            write code and see it in action is an incredible feeling. I'm always
+            looking for ways to be more efficient, to automate processes and to
+            bring ideas to life. I've come so far in this journey but will
+            always be learning and improving to be the best I can be.
+            <br />
+            <br />
+            I currently work as a Software Engineer, previously as an e-Commerce
+            Specialist. My work as an e-Commerce Specialist entailed everything
+            to do with eCommerce websites. I collaborated with designers and
+            product managers on new features, I implemented design and front-end
+            development, I assessed and improved SEO and web accessibility, I
+            automated SQL maintenance tasks and plugin deployments using Azure
+            DevOps... and whatever else came up.
+            <br />
+            <br />
+            <b>Hobbies:</b> Reading, Writing, Learning
+            <br />
+            <b>Tools:</b> JS, Java, Go, C#, Python, CI, AWS, Docker, SQL, SEO,
+            o11y, a11y
+            <br />
+            <b>Cats:</b> JD, Hera, Apollo, Dante
+            <br />
+          </Description>
         </Container>
       </OuterContainer>
     )}

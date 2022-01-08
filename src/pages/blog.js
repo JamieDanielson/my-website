@@ -1,21 +1,21 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import { css } from "@emotion/core"
-import styled from "@emotion/styled"
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const Content = styled.div`
   margin: 0 auto;
   max-width: 860px;
   padding: 1.45rem 1.0875rem;
-`
+`;
 
-const ArticleDate = styled.h5`
-  display: inline;
-  color: #606060;
-`
+// const ArticleDate = styled.h5`
+//   display: inline;
+//   color: #606060;
+// `;
 
 const MarkerHeader = styled.h3`
   display: inline;
@@ -26,12 +26,12 @@ const MarkerHeader = styled.h3`
     rgba(255, 250, 150, 0.8) 100%,
     rgba(255, 250, 150, 0.25)
   );
-`
+`;
 
 const ReadingTime = styled.h5`
   display: inline;
   color: #606060;
-`
+`;
 
 const IndexPage = ({ data }) => {
   return (
@@ -41,9 +41,9 @@ const IndexPage = ({ data }) => {
         <h1>Blog</h1>
         {data.allMarkdownRemark.edges
           .filter(({ node }) => {
-            const rawDate = node.frontmatter.rawDate
-            const date = new Date(rawDate)
-            return date < new Date()
+            const rawDate = node.frontmatter.rawDate;
+            const date = new Date(rawDate);
+            return date < new Date();
           })
           .map(({ node }) => (
             <div key={node.id}>
@@ -56,8 +56,8 @@ const IndexPage = ({ data }) => {
               >
                 <MarkerHeader>{node.frontmatter.title} </MarkerHeader>
                 <div>
-                  <ArticleDate>{node.frontmatter.date}</ArticleDate>
-                  <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
+                  {/* <ArticleDate>{node.frontmatter.date}</ArticleDate> */}
+                  <ReadingTime>{node.fields.readingTime.text}</ReadingTime>
                 </div>
                 <p>{node.excerpt}</p>
               </Link>
@@ -65,10 +65,10 @@ const IndexPage = ({ data }) => {
           ))}
       </Content>
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
 export const query = graphql`
   query {
@@ -87,7 +87,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
             rawDate: date
             path
           }
@@ -102,4 +102,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
